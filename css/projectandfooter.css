@@ -140,22 +140,29 @@ img {vertical-align: middle;}
     font-size: 2rem;
 }
 
-@media only screen and (max-width:425px) {
+@media only screen and (max-width:450px) {
+    .project h1 {
+        margin: auto;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+        font-size: 3rem;
+    }
+
     .monitor {
-        width: 20rem;
-        height: 13rem;
-        border: solid 0.7em #333;
+        width: 17rem;
+        height: 12rem;
+        border: solid 0.5em #333;
     }
 
     .stand::before {
-        top: 15rem;
-        left: 8.5rem;
+        top: 13rem;
+        left: 7rem;
         width: 3rem;
     }
 
     .stand::after {
-        top: 16rem;
-        left: 7rem;
+        top: 14.7rem;
+        left: 5.5rem;
         width: 6rem;
     }
 }

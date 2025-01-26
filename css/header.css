@@ -58,14 +58,30 @@ header {
     border-radius: 50%;
 }
 
-@media only screen and (max-width:425px) {
+@media only screen and (max-width:450px) {
     header {
         padding-right: 0;
+    }
+
+    .nav_li {
+        padding: 0.5rem 0.2rem;
+    }
+
+    .nav_li a {
+        font-size: 0.8rem;
+    }
+
+    .nav_li:first-child {
+        padding-left: 1rem;
+    }
+
+    .nav_li:last-child {
+        padding-right: 1rem;
     }
 
     .navbar {
         margin-right: 0;
     }
 
-    
+
 }

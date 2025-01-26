@@ -134,13 +134,13 @@
     grid-area: depa3r;
 }
 
-@media only screen and (max-width:425px) {
-    .Certificate h1 {
-        font-size: 3rem;
-    }
-
+@media only screen and (max-width:450px) {
     .activity h1 {
         font-size: 3rem;
+    }
+    
+    .Certificate h1 {
+        font-size: 2.4rem;
     }
 
     .certificates {
