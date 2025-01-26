@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    /*FONTS*/
+    --FS: clamp(0.5rem, 2.5vh, 3rem);
+
+    /*COLORS*/
+    --WHITE: #FFFFFF;
+    --BG: #101010;
+    --GRAY: #3b3b3b;
+    --ORANGE: #f15412;
+}
+
+body {
+    background-color: var(--BG);
+}
+
+/* GENERAL STYLES */
+html {
+    font-size: var(--FS);
+    color: var(--WHITE);
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.orange {
+    color: var(--ORANGE);
+}
+
+.dashed {
+    border: dashed white;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.outer {
+    position: relative;
+    transform: translateX(-7px)
+}
+
+.inner {
+    position: absolute;  
+    /* top: 15px;
+    left: 15px; */
+    top: 1.5vh;
+    left: 1.5vh;
+}
+
+.stroke {
+    -webkit-text-stroke: 2px white;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (orientation: landscape) {
+    phone {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    
+}
+
+@media screen and (max-width: 768px) and (max-aspect-ratio: 16/9) {
+    
+} 

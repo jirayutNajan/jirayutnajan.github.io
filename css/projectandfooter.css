@@ -1,0 +1,161 @@
+.project {
+    color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+
+.project h1 {
+    font-family: 'DotGothic16', sans-serif;
+    font-weight: bolder;
+    font-size: 5rem;
+    margin: 2rem;
+}
+
+.project .inner {
+    top: 1.5vh;
+    left: 1.5vh;
+    color: rgba(0, 0, 0, 0.303);
+}
+
+.project-container {
+    margin-top: -3rem;
+}
+
+.project-container img {
+    /* width:805px; */
+    /* width: 42rem; */
+    width: 100%;
+}
+
+.monitor {
+    /* width:850px;
+    height: 500px; */
+    width: 45rem;
+    height: 25rem;
+    overflow-y: auto;
+    border: solid 1em #333;
+    border-radius:.5em;
+    align-items: center;
+}
+
+.monitor::-webkit-scrollbar {
+    width: 15px;
+}
+
+.monitor::-webkit-scrollbar-thumb {
+    background: #666;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #888;
+}
+
+.stand {
+    position: relative;
+}
+
+.stand:before {
+    content:"";
+    display: block;
+    position:relative;
+    background: #222;
+    /* width: 150px;
+    height: 50px;
+    top:550px;
+    left:350px; */
+    width: 8rem;
+    height: 2rem;
+    top: 27rem;
+    left: 18.5rem;
+}
+
+.stand:after {
+    content:"";
+    display:block;
+    position: absolute;
+    background:#333;
+    border-top-left-radius:.5em;
+    border-top-right-radius:.5em;
+    /* width: 300px;
+    height: 15px;
+    top: 27px;
+    left: 275px; */
+    width: 15rem;
+    height: 1rem;
+    top: 29rem;
+    left: 15rem;
+}
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.footer-container {
+    background-color: #101010;
+    height: 5rem;
+}
+
+.footer-contact {
+    margin-top: 2.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width:425px) {
+    .monitor {
+        width: 20rem;
+        height: 13rem;
+        border: solid 0.7em #333;
+    }
+
+    .stand::before {
+        top: 15rem;
+        left: 8.5rem;
+        width: 3rem;
+    }
+
+    .stand::after {
+        top: 16rem;
+        left: 7rem;
+        width: 6rem;
+    }
+}
